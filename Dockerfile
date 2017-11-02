@@ -41,7 +41,7 @@ RUN chgrp -R 0 /tmp/app /.config && \
     chmod -R g=u /tmp/app /.config && \
     cp -a /tmp/app/. /usr/src/app && \
     rm -rf /tmp/app && \
-    chmod +x /var/www/start.sh
+    chmod +x start.sh
 
 CMD ["./start.sh"]
 USER 1001
